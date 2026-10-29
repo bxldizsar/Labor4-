@@ -1,0 +1,27 @@
+-- cerinta 1 - sqlite din linia de comanda (sqlite3.exe)
+-- pornire: sqlite3.exe test.db   (daca nu exista fisierul, il creeaza)
+
+-- creare tabel users
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    FirstName TEXT,
+    LastName TEXT,
+    CNP TEXT
+);
+
+-- inserare 3 utilizatori
+INSERT INTO users (FirstName, LastName, CNP) VALUES ('Ion', 'Popescu', '1990101123456');
+INSERT INTO users (FirstName, LastName, CNP) VALUES ('Maria', 'Ionescu', '2950505123456');
+INSERT INTO users (FirstName, LastName, CNP) VALUES ('Andrei', 'Kovacs', '5010203123456');
+
+-- vizualizare toate inregistrarile
+.headers on
+.mode column
+SELECT * FROM users;
+
+-- stergere toate inregistrarile, apoi tabelul
+DELETE FROM users;
+DROP TABLE users;
+
+-- inchidere sqlite3
+.quit

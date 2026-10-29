@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Labor4/Labor4.csproj" Id="3ce8bc8f-9c5c-4714-bd80-1a3c544e76fa">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+</Solution>
